@@ -649,6 +649,7 @@ class PublicController extends CommonFormController
             $leadModel = $this->getModel('lead');
 
             $lead = $leadModel->getCurrentLead();
+
             /** @var DeviceTrackingServiceInterface $trackedDevice */
             $trackedDevice = $this->get('mautic.lead.service.device_tracking_service')->getTrackedDevice();
             $trackingId    = ($trackedDevice === null ? null : $trackedDevice->getTrackingId());
@@ -656,6 +657,7 @@ class PublicController extends CommonFormController
                 'id'        => ($lead) ? $lead->getId() : null,
                 'sid'       => $trackingId,
                 'device_id' => $trackingId,
+                'segments'  => $leadModel->getLists($lead, true, true),
             ];
         }
 
