@@ -115,7 +115,8 @@
         "sendgrid/sendgrid": "~6.0",
         "noxlogic/ratelimit-bundle": "^1.11",
         "cweagans/composer-patches": "^1.6",
-        "sensio/framework-extra-bundle": "~3.0"
+        "sensio/framework-extra-bundle": "~3.0",
+        "thedmsgroup/mautic-extended-field-bundle": "^3.0"
     },
     "require-dev": {
         "symfony/web-profiler-bundle": "~2.8",
