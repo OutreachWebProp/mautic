@@ -625,6 +625,7 @@ class PublicController extends CommonFormController
                 'id'        => ($lead) ? $lead->getId() : null,
                 'sid'       => $trackingId,
                 'device_id' => $trackingId,
+                'segments'  => $contactTracker->getLists($lead, true, true),
             ];
         }
 

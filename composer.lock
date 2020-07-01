@@ -5200,6 +5200,41 @@
             "time": "2019-10-06T11:29:25+00:00"
         },
         {
+            "name": "mautic/composer-plugin",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mautic/composer-plugin.git",
+                "reference": "aa0f01e683c7e418082ea904a40345a650c219f9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mautic/composer-plugin/zipball/aa0f01e683c7e418082ea904a40345a650c219f9",
+                "reference": "aa0f01e683c7e418082ea904a40345a650c219f9",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0"
+            },
+            "require-dev": {
+                "composer/composer": "^1.5"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "Mautic\\Composer\\InstallerPlugin"
+            },
+            "autoload": {
+                "psr-4": {
+                    "Mautic\\Composer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "time": "2019-08-01T19:20:57+00:00"
+        },
+        {
             "name": "maxmind-db/reader",
             "version": "v1.6.0",
             "source": {
@@ -11406,6 +11441,51 @@
             "time": "2020-03-12T16:23:01+00:00"
         },
         {
+            "name": "thedmsgroup/mautic-extended-field-bundle",
+            "version": "3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TheDMSGroup/mautic-extended-field.git",
+                "reference": "53e9c495282d6561c44f5b852d643417cfc82f3f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TheDMSGroup/mautic-extended-field/zipball/53e9c495282d6561c44f5b852d643417cfc82f3f",
+                "reference": "53e9c495282d6561c44f5b852d643417cfc82f3f",
+                "shasum": ""
+            },
+            "require": {
+                "mautic/composer-plugin": "^1.0"
+            },
+            "type": "mautic-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0-only"
+            ],
+            "authors": [
+                {
+                    "name": "Nicholai Bush",
+                    "email": "nicholaibush@yahoo.com"
+                },
+                {
+                    "name": "Scott Shipman",
+                    "email": "K.scott.shipman@gmail.com"
+                },
+                {
+                    "name": "Heath Dutton",
+                    "email": "heathdutton@gmail.com"
+                }
+            ],
+            "description": "Extends custom fields for scalability and HIPAA/PCI compliance.",
+            "keywords": [
+                "Marketing Automation",
+                "Mautic",
+                "marketing",
+                "plugin"
+            ],
+            "time": "2020-05-27T14:31:37+00:00"
+        },
+        {
             "name": "twig/twig",
             "version": "v2.12.5",
             "source": {
@@ -14414,5 +14494,9 @@
         "ext-zip": "^1.15",
         "ext-imap": "*"
     },
-    "platform-dev": []
+    "platform-dev": [],
+    "platform-overrides": {
+        "php": "5.6.19"
+    },
+    "plugin-api-version": "1.1.0"
 }
